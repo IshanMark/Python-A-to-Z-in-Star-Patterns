@@ -209,7 +209,7 @@ print(str)
 
 print("\n")
 
-# print R
+# print P
 str = ""
 for row in range(7):
     for col in range(8):
