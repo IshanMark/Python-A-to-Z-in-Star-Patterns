@@ -150,3 +150,16 @@ for row in range(7):
 print(str)
 
 print("\n")
+
+# print L
+str = ""
+for row in range(7):
+    for col in range(8):
+        if((col ==1) or (row == 6 and col<5 and col>1 )):
+            str = str+"* "
+        else:
+            str = str+" "
+    str = str+"\n"
+print(str)
+
+print("\n")
