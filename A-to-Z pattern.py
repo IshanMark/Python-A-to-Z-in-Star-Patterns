@@ -118,3 +118,16 @@ for row in range(7):
 print(str)
 
 print("\n")
+
+# print J
+str = ""
+for row in range(10):
+    for col in range(7):
+        if((row ==1 ) or (col == 6 and row<8 and row>1) or (row == 8 and col<4 and col!=0) or (col == 0 and row==7 )):
+            str = str+"* "
+        else:
+            str = str+" "
+    str = str+"\n"
+print(str)
+
+print("\n")
