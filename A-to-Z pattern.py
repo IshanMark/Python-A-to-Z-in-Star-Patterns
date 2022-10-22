@@ -153,10 +153,29 @@ print("\n")
 
 # print L
 str = ""
+i=0
+j=4
 for row in range(7):
     for col in range(8):
         if((col ==1) or (row == 6 and col<5 and col>1 )):
             str = str+"* "
+        elif(row == i and col== j and col<0):
+            str = str+"* "
+            j= j - 1
+            i= i + 1
+        else:
+            str = str+" "
+    str = str+"\n"
+print(str)
+
+print("\n")
+
+# print M
+str = ""
+for row in range(7):
+    for col in range(7):
+        if((col ==0 or col == 6 ) or ((row ==col) and (col>0 and col<4)) or (row==1 and col==5) or (row ==2 and col ==4)):
+            str = str+"*"
         else:
             str = str+" "
     str = str+"\n"
