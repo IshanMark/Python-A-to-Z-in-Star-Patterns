@@ -196,15 +196,16 @@ print(str)
 
 print("\n")
 
-# print N
+# print O
 str = ""
 for row in range(7):
-    for col in range(7):
-        if((col ==0 or col == 6 ) or (row ==col) ):
-            str = str+"*"
+    for col in range(8):
+        if(((row==0 or row==6) and (col<5 and col>1))or (col == 7 and (row!=0 and row!=6 ))or (col == 0 and (row!=0 and row!=6 ))):
+            str = str+"* "
         else:
             str = str+" "
     str = str+"\n"
 print(str)
 
 print("\n")
+
