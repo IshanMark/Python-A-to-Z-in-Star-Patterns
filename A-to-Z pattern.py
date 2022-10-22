@@ -213,12 +213,25 @@ print("\n")
 str = ""
 for row in range(7):
     for col in range(8):
+        if(col==1 or ((row==0 or row==3) and (col<5 and col>1))or (col == 7  and (row!=0 and row!=3 and row<4))):
+            str = str+"* "
+        else:
+            str = str+" "
+    str = str+"\n"
+print(str)
+print("\n")
+
+# print R
+str = ""
+for row in range(7):
+    for col in range(8):
         if(col==1 or ((row==0 or row==3) and (col<5 and col>1))or (col == 7  and (row!=0 and row!=3))):
             str = str+"* "
         else:
             str = str+" "
     str = str+"\n"
 print(str)
+print("\n")
 
 
 
