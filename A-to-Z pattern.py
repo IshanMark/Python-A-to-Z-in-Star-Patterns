@@ -131,3 +131,22 @@ for row in range(10):
 print(str)
 
 print("\n")
+
+# print K
+str = ""
+i=0
+j=4
+for row in range(7):
+    for col in range(7):
+        if(col ==0 or (row == col+2 and col>1) ):
+            str = str+"* "
+        elif((row == i and col ==j)and col>0):
+            str = str+"* "
+            j= j - 1
+            i= i + 1
+        else:
+            str = str+" "
+    str = str+"\n"
+print(str)
+
+print("\n")
