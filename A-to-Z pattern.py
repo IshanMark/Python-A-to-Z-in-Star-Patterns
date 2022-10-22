@@ -182,3 +182,29 @@ for row in range(7):
 print(str)
 
 print("\n")
+
+# print N
+str = ""
+for row in range(7):
+    for col in range(7):
+        if((col ==0 or col == 6 ) or (row ==col) ):
+            str = str+"*"
+        else:
+            str = str+" "
+    str = str+"\n"
+print(str)
+
+print("\n")
+
+# print N
+str = ""
+for row in range(7):
+    for col in range(7):
+        if((col ==0 or col == 6 ) or (row ==col) ):
+            str = str+"*"
+        else:
+            str = str+" "
+    str = str+"\n"
+print(str)
+
+print("\n")
