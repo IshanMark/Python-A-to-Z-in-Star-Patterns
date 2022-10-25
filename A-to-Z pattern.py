@@ -180,7 +180,6 @@ for row in range(7):
             str = str+" "
     str = str+"\n"
 print(str)
-
 print("\n")
 
 # print N
@@ -297,6 +296,18 @@ for row in range(5):
             str = str+"* "
             j= j - 1
             i= i + 1
+        else:
+            str = str+" "
+    str = str+"\n"
+print(str)
+print("\n")
+
+# print W
+str = ""
+for row in range(7):
+    for col in range(9):
+        if((col ==0 or col == 8 ) or (col == 2 and row == 5 ) or (col==3 and row ==4 ) or (col ==4 and row == 3) or (col == 5 and row == 4 ) or (col==6 and row ==5)):
+            str = str+"*"
         else:
             str = str+" "
     str = str+"\n"
