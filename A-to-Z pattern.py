@@ -351,6 +351,24 @@ for row in range(7):
 print(str)
 print("\n")
 
+# print Z
+str = ""
+i = 0
+j = 6
+for row in range(7):
+    for col in range(6):
+        if(col==j or row== i):
+            str = str+"* "
+            i=i+1
+            j=j-1
+        elif(row ==0 or row ==6):
+            str = str+"* "
+        else:
+            str = str+"  "
+    str = str+"\n"
+print(str)
+print("\n")
+
 
 
 
