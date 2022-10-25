@@ -221,6 +221,19 @@ for row in range(7):
 print(str)
 print("\n")
 
+# print Q
+str = ""
+for row in range(7):
+    for col in range(8):
+        if((col == 1 and (row!=0 and row!=6 )) or ((row==0 or row==6) and (col<5 and col>1))or (col == 7 and (row!=0 ))):
+            str = str+"* "
+        else:
+            str = str+" "
+    str = str+"\n"
+print(str)
+
+print("\n")
+
 # print R
 str = ""
 for row in range(7):
@@ -231,6 +244,19 @@ for row in range(7):
             str = str+" "
     str = str+"\n"
 print(str)
+print("\n")
+
+# print S
+str = ""
+for row in range(7):
+    for col in range(8):
+        if((col ==0 and(row<3 and row >0))or(col ==7 and(row<6 and row >3))or ((row == 0 and(col<4 and col>0)) or (row == 3 and(col<4 and col>0)) or (row == 6 and(col<4 and col>0)))):
+            str = str+"* "
+        else:
+            str = str+" "
+    str = str+"\n"
+print(str)
+
 print("\n")
 
 
