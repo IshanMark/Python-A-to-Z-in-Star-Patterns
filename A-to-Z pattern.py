@@ -361,7 +361,7 @@ for row in range(7):
             str = str+"* "
             i=i+1
             j=j-1
-        elif(row ==0 or row ==6):
+        elif(row ==0 or row ==5):
             str = str+"* "
         else:
             str = str+"  "
