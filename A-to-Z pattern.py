@@ -285,6 +285,24 @@ print(str)
 
 print("\n")
 
+# print V
+str = ""
+i = 0
+j = 8
+for row in range(5):
+    for col in range(9):
+        if(col==row):
+            str =  str+"* "
+        elif((row == i and col ==j)):
+            str = str+"* "
+            j= j - 1
+            i= i + 1
+        else:
+            str = str+" "
+    str = str+"\n"
+print(str)
+print("\n")
+
 
 
 
