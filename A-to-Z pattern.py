@@ -259,6 +259,21 @@ print(str)
 
 print("\n")
 
+# print T
+str = ""
+for row in range(7):
+    for col in range(5):
+        if((row ==1 ) or (col == 4 and row<7 and row>1 )):
+            str = str+"* "
+        else:
+            str = str+" "
+    str = str+"\n"
+print(str)
+
+print("\n")
+
+
+
 
 
 
