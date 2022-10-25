@@ -272,6 +272,18 @@ print(str)
 
 print("\n")
 
+# print U
+str = ""
+for row in range(7):
+    for col in range(8):
+        if(((row==6) and (col<5 and col>0))or (col == 7 and (row!=0 and row!=6 ))or (col == 0 and (row!=0 and row!=6 ))):
+            str = str+"* "
+        else:
+            str = str+" "
+    str = str+"\n"
+print(str)
+
+print("\n")
 
 
 
