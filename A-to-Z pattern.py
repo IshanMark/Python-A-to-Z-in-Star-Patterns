@@ -333,6 +333,25 @@ print(str)
 print("\n")
 
 
+# print y
+str = ""
+i = 0
+j = 6
+for row in range(7):
+    for col in range(6):
+        if(col==j or row== i):
+            str = str+"* "
+            i=i+1
+            j=j-1
+        elif((col == row) and row <3):
+            str = str+"* "
+        else:
+            str = str+" "
+    str = str+"\n"
+print(str)
+print("\n")
+
+
 
 
 
