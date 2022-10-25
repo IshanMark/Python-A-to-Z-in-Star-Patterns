@@ -263,7 +263,7 @@ print("\n")
 str = ""
 for row in range(7):
     for col in range(5):
-        if((row ==1 ) or (col == 4 and row<7 and row>1 )):
+        if((row ==0 ) or (col == 4 and row<7 and row>0 )):
             str = str+"* "
         else:
             str = str+" "
@@ -271,6 +271,7 @@ for row in range(7):
 print(str)
 
 print("\n")
+
 
 
 
